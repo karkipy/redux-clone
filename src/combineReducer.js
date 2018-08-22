@@ -5,7 +5,9 @@ const combineReducer = (reducers) => {
         nextState[key] = reducers[key](
         state[key],
         action );
-      }
+        return nextState;
+      },
+      {}
     );
-  }
-}
+  };
+};
