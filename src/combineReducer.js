@@ -11,3 +11,5 @@ const combineReducer = (reducers) => {
     );
   };
 };
+
+module.exports = combineReducer;
