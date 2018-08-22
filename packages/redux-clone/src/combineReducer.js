@@ -1,5 +1,5 @@
 const combineReducer = (reducers) => {
-  return (state = {} , action) {
+  return (state = {} , action) => {
     return Object.keys(reducers).reduce(
       (nextState, key) => {
         nextState[key] = reducers[key](
@@ -12,3 +12,4 @@ const combineReducer = (reducers) => {
   };
 };
  module.exports = combineReducer;
+
