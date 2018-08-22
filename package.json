@@ -1,0 +1,9 @@
+{
+  "name": "redux-clone",
+  "version": "0.1.0",
+  "description": "a clone library similar to redux library",
+  "main": "index.js",
+  "author": "Aashish Karki <aashish.y2z@gmail.com>",
+  "license": "UNLICENSED",
+  "private": true
+}
