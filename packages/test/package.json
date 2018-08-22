@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "description": "a test directory for the redux-clone library",
+  "main": "index.js",
+  "author": "Aashish Karki",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "redux-clone": "0.1.0"
+  }
+}
