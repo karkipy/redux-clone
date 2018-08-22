@@ -22,6 +22,9 @@ const dispatcherAction = {
   type: 'INCREMENT',
 }
 // dispatch a simple action
-store.dispatch(dispatcherAction);
 // see the result
-console.log(store.getState());
+const render = () =>{
+  console.log(store.getState());
+}
+store.subscribe(render);
+store.dispatch(dispatcherAction);
