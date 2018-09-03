@@ -6,5 +6,10 @@
   "author": "Aashish Karki <aashish.y2z@gmail.com>",
   "license": "UNLICENSED",
   "url": "git@github.com:karkipy/redux-clone.git",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.4"
+  }
 }
