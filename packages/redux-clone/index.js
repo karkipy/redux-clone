@@ -3,5 +3,5 @@ const combineReducer = require('./src/combineReducer');
 
 module.exports = {
   createStore,
-	combineReducer,
+  combineReducer,
 };
