@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { Provider } from './Provider';
+
 export default class Container extends Component {
   constructor() {
     super();
@@ -13,9 +15,9 @@ export default class Container extends Component {
   render() {
     const { store } = this.props;
     return (
-      <div value={{ store: this.state }}>
+      <Provider value={{ store: this.state }}>
         {this.props.children}
-      </div>
+      </Provider>
     );
   }
 }
