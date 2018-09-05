@@ -1,5 +1,5 @@
 const connect = (first, third = null) => (second) => {
-  console.log(first, second);
+  console.log(first,third, second);
 };
 
 
