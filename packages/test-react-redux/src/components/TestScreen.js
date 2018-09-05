@@ -1,20 +1,7 @@
 import React from 'react';
 import { connect } from 'redux-clone';
 
-class TestScreen extends React.Component {
-  constructor(){
-    super();
-  }
-
-  render() {
-    console.log(this.props);
-    return(
-      <div>
-        test
-        </div>
-    )
-  }
-}
+const TestScreen = ({ increment }) => <div> Increment Value :{increment} </div>;
 
 const mapStateToProps = ({ increment }) => ({
   increment

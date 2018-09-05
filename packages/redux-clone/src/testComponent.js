@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Consumer } from './Provider';
+import { Consumer } from './Content';
 
 class testComponent extends Component {
   constructor() {
