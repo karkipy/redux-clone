@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-export const { Provider, Consumer } = React.createContext();
-
 export default class Container extends Component {
   constructor() {
     super();
@@ -9,16 +7,15 @@ export default class Container extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(nextProps);
-    this.setState(nextProps);
+    console.log(nextProps," next");
   }
 
   render() {
-    console.log(this.props);
+    const { store } = this.props;
     return (
-      <Provider value={{ store: this.state }}>
+      <div value={{ store: this.state }}>
         {this.props.children}
-      </Provider>
+      </div>
     );
   }
 }

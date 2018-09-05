@@ -1,6 +1,6 @@
 import React from 'react';
 
-const { Consumer } = require('./Container');
+const { Consumer } = require('./Provider');
 
 export const connect = () => { return (
   <Consumer>
