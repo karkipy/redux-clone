@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import { createStore } from 'redux-clone';
-import { Something } from 'redux-react-clone';
+import { Container, testComponent } from 'redux-clone';
 import reducer from './store/reducer';
-import Container from './components/Container';
-import './App.css';
+import TestScreen from './components/TestScreen';
 
+const Pro = Container.default;
+const Test = testComponent.default;
 const store = createStore(reducer);
-
 
 class App extends Component {
   render() {
     return (
-      <Container />
+      <Pro store={store}> aa <Test />
+        <TestScreen />
+      </Pro>
     );
   }
 }
