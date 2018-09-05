@@ -13,11 +13,14 @@ var _require2 = require('./Connect'),
 
 var Container = require('./Container');
 
+var testComponent = require('./testComponent');
+
 module.exports = {
   connect: connect,
   Provider: Provider,
   Consumer: Consumer,
   Container: Container,
   createStore: createStore,
-  combineReducer: combineReducer
+  combineReducer: combineReducer,
+  testComponent: testComponent
 };

@@ -8,14 +8,11 @@ export default class Container extends Component {
     this.state = {};
   }
 
-  static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(nextProps," next");
-  }
-
   render() {
     const { store } = this.props;
+    console.log(store);
     return (
-      <Provider value={{ store: this.state }}>
+      <Provider value={{ store: store.getState() }}>
         {this.props.children}
       </Provider>
     );
