@@ -16,4 +16,8 @@ class TestScreen extends React.Component {
   }
 }
 
-export default connect(TestScreen);
+const mapStateToProps = ({ increment }) => ({
+  increment
+});
+
+export default connect(mapStateToProps)(TestScreen);
