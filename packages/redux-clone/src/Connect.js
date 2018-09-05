@@ -1,6 +1,6 @@
 import React from 'react';
 
-const { Consumer } = require('./Provider');
+const { Consumer } = require('./Content');
 
 export const connect = (stateToProps, stateToDispatch = null) => (WrappedComponent) => {
   return class extends React.Component {
@@ -17,15 +17,3 @@ export const connect = (stateToProps, stateToDispatch = null) => (WrappedCompone
     }
   }
 }
-
-// export function connect (stateToProps, stateToDispatch)(WrappedComponent) {
-//   return class extends React.Component {
-//     render() {
-//       return (
-//         <Consumer>
-//           {value => <WrappedComponent {...this.props} {...value} />}
-//         </Consumer>
-//       )
-//     }
-//   }
-// }

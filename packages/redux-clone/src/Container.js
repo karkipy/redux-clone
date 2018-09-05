@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Provider } from './Provider';
+import { Provider } from './Content';
 
 export default class Container extends Component {
   constructor() {
@@ -10,7 +10,6 @@ export default class Container extends Component {
 
   render() {
     const { store } = this.props;
-    console.log(store);
     return (
       <Provider value={{ store: store.getState() }}>
         {this.props.children}
